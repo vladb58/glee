@@ -21,3 +21,10 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.title{
+  font-size: 36px;
+  color: #191919;
+  margin-bottom: 35px;
+  @extend %dmsans-700;
+}

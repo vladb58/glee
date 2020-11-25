@@ -7,4 +7,5 @@ $(function () {
     autoplaySpeed: 2000,
   });
   var mixer = mixitup('.product__items');
+  var mixer = mixitup('.new__items');
 })

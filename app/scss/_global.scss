@@ -27,4 +27,21 @@ body{
   color: #191919;
   margin-bottom: 35px;
   @extend %dmsans-700;
+  text-align: center;
+}
+
+.filter{
+  text-align: center;
+  &__btn{
+    border: none;
+    background-color: transparent;
+    color: #8b8b8b;
+    @extend %dmsans-700;
+    font-size: 16px;
+    margin-bottom: 78px;
+    
+  }
+  &__btn + .product__filter-btn{
+    margin-left: 17px;
+  }
 }

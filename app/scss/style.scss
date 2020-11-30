@@ -572,7 +572,7 @@
   background-size: cover;
   background-position: top center;
   padding: 185px 0;
-  margin-bottom: 430px;
+  margin-bottom: 110px;
   &__play{
     display: inline-block;
     display: flex;
@@ -581,7 +581,7 @@
 }
 
 .blog{
- background-color: #fef7f0;
+ background: linear-gradient(180deg, #fff 320px,  #fef7f0 0%);
   &__top{
     display: flex;
     justify-content: space-between;
@@ -606,8 +606,7 @@
    }
  }
  &__items-elements{
-  
-  margin-top: -315px;
+ 
  }
   &__items{
   display: flex;
@@ -755,6 +754,41 @@
     padding: 10px 0;
   }
 
+}
+.terms{
+  padding-top: 110px;
+  margin-bottom: 110px;
+  &__title{
+    @extend %rubik-500;
+    font-size: 24px;
+    color: #243f4d;
+    margin-bottom: 35px;
+  }
+  &__list{
+    font-size: 16px;
+    color: #243f4d;
+    counter-reset: counter;
+    margin-bottom: 60px;
+  }
+  &__item{
+    list-style: none;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 38px;
+    &::before{
+      content: '0' counter(counter) '.';
+      counter-increment: counter;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 16px;
+    }
+  }
+  &__text{
+    margin-bottom: 65px;
+    font-size: 16px;
+    color: #243f4d;
+  }
 }
 
 

@@ -71,3 +71,47 @@ body{
     color: inherit;
   }
 }
+
+.pagination{
+  display: flex;
+  padding: 110px 0;
+  justify-content: center;
+  .pagination__list{
+    display: flex;
+    align-items: center;
+  }
+  &__item{
+    color: #243f4d;
+    line-height: 14px;
+    padding: 18px 20px;
+    border: 1px solid #a3bbc8;
+    cursor: pointer;
+    & + .pagination__item{
+      margin-left: 15px;
+    }
+  }
+  &__item--active{
+    background-color: #a3bbc8;
+    & .pagination__link{
+      color: #fff;
+    }
+  }
+  &__arrows{
+    color: #243f4d;
+    line-height: 14px;
+    padding: 18px 20px;
+    border: 1px solid #a3bbc8;
+  }
+  &__prev{
+    &.pagination__none{
+      display: none;
+    }
+    margin-right: 15px;
+  }
+  &__next{
+    &.pagination__none{
+      display: none;
+    }
+    margin-left: 15px;
+  }
+}

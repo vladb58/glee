@@ -1,6 +1,7 @@
 $default: #436372;
 $title: #1a1a1a;
 
+
 %dmsans-700{
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
@@ -29,6 +30,15 @@ $title: #1a1a1a;
 %rubik-400{
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
+}
+
+%checkbox-hidden,
+%radio-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
 
 @function max($numbers...) {

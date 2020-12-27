@@ -1529,8 +1529,149 @@
   }
 }
 
-.related-slider{
-  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+.blog-page{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 830px;
+    margin-right: 70px;
+  }
+  &__item-info{
+    font-size: 12px;
+    text-align: center;
+    padding: 24px 0;
+    display: flex;
+    color: #fff;
+    background-color: #a3bbc8;
+    width: 275px;
+    position: relative;
+    z-index: 5;
+    margin-top: -80px;
+  }
+  &__item-author{
+    color: inherit;
+    margin-left: 25px;
+    padding-left: 22px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url(../images/icon/user-white.svg);
+      height: 17px;
+      width: 15px;
+      left: 0;
+      top: 7px;
+    }
+  }
+  &__item-date{
+    margin-left: 17px;
+    padding-left: 23px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url(../images/icon/calendar-white.svg);
+      width: 17px;
+      height: 17px;
+      left: 0;
+      top: 6px;
+    }
+  }
+  &__item-title{
+    font-size: 36px;
+    color: #333333;
+    margin: 40px 0;
+  }
+  &__item-titlelink{
+    color: inherit;
+  }
+  &__item-text{
+    font-size: 16px;
+    color: #243f4d;
+    margin-bottom: 25px;
+    
+  }
+  &__item-viewlink{
+    display: inline-block;
+    color: #a9c0cc;
+    border: 1px solid #a9c0cc;
+    font-size: 15px;
+    padding: 15px 85px 17px 20px;
+    position: relative;
+    margin-bottom: 50px;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url(../images/icon/arrow-blue.svg);
+      width: 22px;
+      height: 9px;
+      right: 20px;
+      top: 28px;
+    }
+  }
+}
+
+.filter-search{
+  &__form{
+    display: flex;
+  }
+  &__input{
+    border: 2px solid #edf1f4;
+    border-radius: 4px;
+    width: 100%;
+    height: 44px;
+  }
+  &__btn{
+    background-color: #edf1f4;
+    padding: 10px 15px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-left: -4px;
+  }
+}
+
+.recent-posts{
+  &__item{
+    margin-bottom: 20px;
+    display: flex;
+  }
+  &__img-link{
+    display: block;
+    margin-right: 20px;
+    min-width: 70px;
+  }
+  &__img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+  }
+  &__title-link{
+    color: #333333;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  &__date{
+    font-size: 12px;
+    position: relative;
+    padding-left: 24px;
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url(../images/icon/calendar.svg);
+      height: 17px;
+      width: 16px;
+      left: 0;
+      top: 6px;
+    }
+  }
+}
+
+.blog-pagination{
+  padding: 0;
+  margin-top: 25px;
 }
 
 
